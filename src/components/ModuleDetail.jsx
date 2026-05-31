@@ -37,11 +37,11 @@ export default function ModuleDetail({ module, section, setSection, onBack }) {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="max-w-6xl mx-auto px-4 py-8 md:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8">
           {/* Sidebar */}
           <div className="md:col-span-1">
-            <div className="sticky top-24 space-y-2">
+            <div className="sticky top-24 space-y-2 mb-8 md:mb-0">
               <h3 className="font-bold text-gray-900 mb-4">Sections</h3>
               {fullModule.sections.map(sec => (
                 <button
@@ -61,7 +61,7 @@ export default function ModuleDetail({ module, section, setSection, onBack }) {
 
           {/* Content */}
           <div className="md:col-span-3">
-            <div className="prose prose-lg max-w-none">
+            <div className="prose prose-sm md:prose-lg max-w-none">
               <h2 className="text-4xl font-bold text-gray-900 mb-6">{currentSection?.title}</h2>
               
               {currentSection?.content && (
@@ -207,7 +207,7 @@ export default function ModuleDetail({ module, section, setSection, onBack }) {
                     <div key={idx} className="border border-gray-200 rounded-lg p-6 bg-white">
                       <h4 className="text-xl font-bold text-gray-900 mb-2">{pattern.name}</h4>
                       <p className="text-gray-600 mb-4">{pattern.description}</p>
-                      <div className="grid grid-cols-2 gap-4 mb-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                         <div>
                           <p className="font-semibold text-gray-900 mb-2">Pros</p>
                           <ul className="list-disc list-inside space-y-1 text-sm text-gray-600">
@@ -260,7 +260,7 @@ export default function ModuleDetail({ module, section, setSection, onBack }) {
                         <span className="text-sm font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">{model.pricing}</span>
                       </div>
                       <p className="text-gray-600 mb-4">{model.description}</p>
-                      <div className="grid grid-cols-2 gap-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                           <p className="font-semibold text-gray-900 mb-2 text-sm">Pros</p>
                           <ul className="list-disc list-inside space-y-1 text-sm text-gray-600">
