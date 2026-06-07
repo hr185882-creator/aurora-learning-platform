@@ -221,7 +221,7 @@ export const courseModules = [
       {
         id: "case-study",
         title: "Case Study: GrindWire Architecture",
-        content: "How AURORA GRID's decision-intelligence platform is architectured for reliability and scalability.",
+        content: "How AURORA GRID's decision-intelligence platform is architected for reliability and scalability.",
         architecture: {
           frontend: {
             tech: "Static HTML/CSS/JS",
@@ -353,6 +353,130 @@ export const courseModules = [
         content: "Ready-to-use templates for building your own frameworks"
       }
     ]
+  },
+  {
+    id: 5,
+    title: "Forecast Portfolio Catalog",
+    description: "Catalog of AURORA GRID case files, verification boundaries, and teachable forecast patterns",
+    icon: "📚",
+    color: "slate",
+    sections: [
+      {
+        id: "catalog-rules",
+        title: "Catalog Rules",
+        content: "The catalog is not a hype board. Each case is a learning record: what changed, why it mattered, what it forced next, what would have falsified it, and what action state followed.",
+        subsections: [
+          {
+            title: "Evidence Boundary",
+            content: "Separate timestamped records, official outcomes, user-attested forecast packets, and working grades. Do not promote a case from plausible to supported unless the record trail directly supports the claim."
+          },
+          {
+            title: "Forecast Discipline",
+            content: "Use formal probabilities, gate states, constraints, and falsifiers. Internal certainty is analyst psychology, not a scoring-grade probability."
+          },
+          {
+            title: "Action-State Output",
+            content: "Every serious case should end in a decision posture: monitor, wait, reject, investigate, hedge, trade, publish, escalate, or prepare."
+          }
+        ]
+      },
+      {
+        id: "strong-anchors",
+        title: "Strong Anchor Cases",
+        content: "High-signal records used to teach evidence discipline, mechanism quality, and forecast resolution.",
+        subsections: [
+          {
+            title: "Poland Javelin Missile Systems Forecast",
+            content: "Strongest anchor case. Forecast called State Department approval for Poland's Javelin request, including system type, quantity band, value band, and near-term timing. Outcome matched the DSCA notice within the stated frame."
+          },
+          {
+            title: "Iran War Phase Forecast",
+            content: "Operational war-phase case. The working audit grades the hot-phase duration call, U.S. endurance constraint, Iran asymmetric tail, Gulf defensive posture, and Pakistan hedge-to-mediator pathway as major hits, with partials on Israel endurance and post-ceasefire instability."
+          },
+          {
+            title: "Pakistan Mediation Channel Identification",
+            content: "Mechanism case. Forecast identified Pakistan as a useful message-routing and mediation node between Washington and Tehran because of channel utility, not because of coercive leverage."
+          }
+        ]
+      },
+      {
+        id: "mechanism-cases",
+        title: "Mechanism and Continuity Cases",
+        content: "Cases where the value is not just directionality but the mechanism: who had leverage, what constraint failed, and what continuity pathway remained available.",
+        subsections: [
+          {
+            title: "Maduro's Last Exit Ramp",
+            content: "CRF case. The Trump-Maduro call was framed as an exit-ultimatum pathway inside coercive-removal architecture, with the gate moving from live-but-blocked to constraint failure after exit terms failed."
+          },
+          {
+            title: "Delcy Rodríguez Continuity Signal",
+            content: "Actor-behavior case. Selective target treatment was interpreted as a continuity/deconfliction signal. The public claim should stay narrow: continuity logic was suggested, not a proven secret arrangement."
+          },
+          {
+            title: "Venezuela Sanctions Pressure Cascade",
+            content: "Pressure-cascade case. Sanctions, legitimacy pressure, and exit incentives are tracked as interacting constraints rather than isolated headlines."
+          },
+          {
+            title: "U.S. Foreign Policy Shift",
+            content: "Cross-domain policy case. Tracks U.S. movement around Eastern Europe burden-sharing, Middle East escalation management, defense procurement, and regional alignment. The Poland Javelin case is the strongest anchor inside this broader thesis."
+          }
+        ]
+      },
+      {
+        id: "personnel-fragility",
+        title: "Personnel Fragility Registry",
+        content: "Personnel calls are cataloged as institutional fragility forecasts. They should distinguish public observable pressure from non-public knowledge, and user-attested records from independently timestamped proof.",
+        subsections: [
+          {
+            title: "Kristi Noem",
+            content: "Tracked as a G3 personnel-fragility call in the working registry. Use as a teaching example for visible institutional pressure, not as an insider-information claim."
+          },
+          {
+            title: "Joe Kent and Tulsi Gabbard",
+            content: "Tracked as a one-year horizon personnel-fragility forecast. Teach the difference between directional pressure, gate movement, and resolved outcome."
+          },
+          {
+            title: "Pam Bondi",
+            content: "Tracked as a G3 call that strengthened as Todd Blanche became more publicly visible in DOJ authority signaling."
+          },
+          {
+            title: "Dan Bongino",
+            content: "Tracked as G2 during the Bondi fight and G3 after public institutional-friction signaling."
+          }
+        ]
+      },
+      {
+        id: "audit-discipline",
+        title: "Audit Discipline",
+        steps: [
+          {
+            step: 1,
+            title: "Freeze the Original Claim",
+            description: "Preserve the forecast wording, timestamp, probability, gate state, and falsifier before outcome resolution."
+          },
+          {
+            step: 2,
+            title: "Attach Primary Outcomes",
+            description: "Resolve cases against official records, primary notices, court filings, direct transcripts, or other source-of-record material whenever available."
+          },
+          {
+            step: 3,
+            title: "Score Narrowly",
+            description: "Grade the actual claim made, not a broader narrative reconstructed after the fact."
+          },
+          {
+            step: 4,
+            title: "Separate Working Grade from Audit-Hardened Grade",
+            description: "Working grades can guide learning; audit-hardened grades require timestamp packets and source review."
+          },
+          {
+            step: 5,
+            title: "Route the Case",
+            description: "Publish strong anchors, monitor unresolved cases, investigate weak records, and reject unsupported overclaims."
+          }
+        ]
+      }
+    ]
   }
 ];
 
@@ -367,7 +491,7 @@ export const comparisons = [
         constraintAnalysis: "CRF layer dedicated",
         redTeam: "BLACKGLASS layer embedded",
         actionRouting: "COMMAND layer converts to decision states",
-        verification: "Hall of Record with proof",
+        verification: "Forecast Portfolio + K-ALIGN record gate",
         monetization: "Premium consulting ($99-$199+)"
       },
       {
@@ -418,6 +542,31 @@ export const comparisons = [
         deployment: "Simple",
         teamSize: "Small",
         cost: "Variable"
+      }
+    ]
+  },
+  {
+    category: "Evidence Catalog Maturity",
+    frameworks: [
+      {
+        name: "Working Catalog",
+        layers: 3,
+        sourceDiscipline: "User-attested records + visible source packets",
+        constraintAnalysis: "Useful for learning and triage",
+        redTeam: "Requires overclaim checks",
+        actionRouting: "Investigate or monitor",
+        verification: "Not audit-hardened until source packet review",
+        monetization: "Internal curriculum"
+      },
+      {
+        name: "Audit-Hardened Catalog",
+        layers: 5,
+        sourceDiscipline: "Timestamp packet + primary outcome record + source snapshot",
+        constraintAnalysis: "Resolved against original claim and falsifier",
+        redTeam: "Includes miss and partial accounting",
+        actionRouting: "Publish or escalate",
+        verification: "External-review ready",
+        monetization: "Premium proof asset"
       }
     ]
   }
