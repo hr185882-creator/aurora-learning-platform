@@ -3,6 +3,9 @@ import { comparisons } from '../data/courseData';
 
 export default function Comparisons() {
   const [activeTab, setActiveTab] = useState(0);
+  const activeComparison = comparisons[activeTab];
+  const hasFrameworks = Array.isArray(activeComparison?.frameworks);
+  const hasPatterns = Array.isArray(activeComparison?.patterns);
 
   return (
     <section className="py-16 md:py-24 bg-gray-50">
@@ -31,7 +34,7 @@ export default function Comparisons() {
 
         {/* Content */}
         <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
-          {comparisons[activeTab].category === "Decision-Making Frameworks" ? (
+          {hasFrameworks && (
             <div className="overflow-x-auto -mx-4 px-4">
               <table className="w-full text-xs md:text-sm">
                 <thead className="bg-gray-50 border-b border-gray-200">
@@ -45,7 +48,7 @@ export default function Comparisons() {
                   </tr>
                 </thead>
                 <tbody>
-                  {comparisons[activeTab].frameworks.map((fw, idx) => (
+                  {activeComparison.frameworks.map((fw, idx) => (
                     <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                       <td className="px-2 md:px-6 py-3 md:py-4 font-semibold text-gray-900 text-xs md:text-sm">{fw.name}</td>
                       <td className="px-2 md:px-6 py-3 md:py-4 text-gray-600 text-xs md:text-sm">{fw.layers}</td>
@@ -58,7 +61,9 @@ export default function Comparisons() {
                 </tbody>
               </table>
             </div>
-          ) : (
+          )}
+
+          {hasPatterns && (
             <div className="overflow-x-auto -mx-4 px-4">
               <table className="w-full text-xs md:text-sm">
                 <thead className="bg-gray-50 border-b border-gray-200">
@@ -72,7 +77,7 @@ export default function Comparisons() {
                   </tr>
                 </thead>
                 <tbody>
-                  {comparisons[activeTab].patterns.map((pattern, idx) => (
+                  {activeComparison.patterns.map((pattern, idx) => (
                     <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                       <td className="px-2 md:px-6 py-3 md:py-4 font-semibold text-gray-900 text-xs md:text-sm">{pattern.name}</td>
                       <td className="px-2 md:px-6 py-3 md:py-4 text-gray-600 text-xs hidden sm:table-cell">{pattern.scalability}</td>
@@ -84,6 +89,12 @@ export default function Comparisons() {
                   ))}
                 </tbody>
               </table>
+            </div>
+          )}
+
+          {!hasFrameworks && !hasPatterns && (
+            <div className="p-6 text-sm text-gray-600">
+              No comparison data is configured for this category yet.
             </div>
           )}
         </div>
