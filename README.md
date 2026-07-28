@@ -1,5 +1,8 @@
 # AURORA Learning Platform
 
+[![Quality checks](https://github.com/hr185882-creator/aurora-learning-platform/actions/workflows/quality.yml/badge.svg)](https://github.com/hr185882-creator/aurora-learning-platform/actions/workflows/quality.yml)
+[![Live site smoke test](https://github.com/hr185882-creator/aurora-learning-platform/actions/workflows/live-smoke.yml/badge.svg)](https://github.com/hr185882-creator/aurora-learning-platform/actions/workflows/live-smoke.yml)
+
 A web-based learning and documentation environment for structured analysis, evidence verification, forecasting discipline, and decision workflows built around AURORA GRID.
 
 ## Live product
@@ -55,6 +58,10 @@ Production build:
 npm run build
 npm start
 ```
+
+## Automated verification
+
+The repository runs deterministic quality checks on pushes and pull requests, builds the application when lockfile-based dependencies are present, reviews high-severity dependency changes, and checks the public deployment on a daily schedule.
 
 ## Canonical workflow
 
