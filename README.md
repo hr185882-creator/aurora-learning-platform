@@ -17,11 +17,13 @@ https://auroralearning.manus.space/
 
 The platform turns the AURORA GRID methodology into a navigable learning product. It is designed to help users understand and apply:
 
+- minimum-sufficient mode routing;
 - source provenance and evidence quality;
 - fact, inference, forecast, speculation, and unverified-claim separation;
-- adversarial evaluation and thesis testing;
+- adversarial evaluation before forecast finalization;
 - binding-constraint analysis;
 - gate states, triggers, falsifiers, and action states;
+- action-level red-teaming for sizing, timing, reversibility, and execution risk;
 - continuous revision and auditable analytical records;
 - forecast review and post-outcome calibration.
 
@@ -65,7 +67,11 @@ The repository runs deterministic quality checks on pushes and pull requests, bu
 
 ## Canonical workflow
 
-`SCOUT -> SOURCEGRID -> K-ALIGN -> IPR -> BLACKGLASS -> CRF -> COMMAND -> AURORA GRID -> RECORD LOCK`
+`ROUTER -> SCOUT -> SOURCEGRID -> K-ALIGN -> IPR -> BLACKGLASS-I -> CRF -> COMMAND -> BLACKGLASS-II -> RECORD LOCK`
+
+AAIK operates across every stage. Luna expands possibilities, Terra grounds the record, and Sol resolves the judgment and action. AURORA GRID names the complete operating system rather than an internal pipeline step.
+
+Canonical specification: https://github.com/hr185882-creator/aurora-grid-grindwire-site/blob/main/docs/AURORA_GRID_V2_CANONICAL.md
 
 ## Repository links
 
@@ -77,6 +83,6 @@ The repository runs deterministic quality checks on pushes and pull requests, bu
 ## Contact
 
 - Hasan Raza Kazmi
-- Email: kazmihasan624@gmail.com
+- Email: Grindwireproject@gmail.com
 - Location: Pakistan
 - Work preference: fully remote
